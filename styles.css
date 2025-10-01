@@ -1,22 +1,22 @@
 body{
     background-color: #fbfbd7;
-    color: #003b0e;
+    color: #4c00ff;
     font-family:"IBM Plex Sans JP", sans-serif;
 }
 a{
-    color: #640000;
+    color: #ff09bd;
     text-decoration: solid;
-    border: #147e22 2px solid;
+    border: #4c00ff 2px solid;
     border-radius: 5px;
     padding: 2px 6px;
     padding-inline: 900;
+    text-decoration: none;
     background-color: hsl(58, 83%, 84%); /* light highlight */
 }
 
 a:hover{
-    background-color: #640000 ;
+    background-color: #ff00e6 ;
     color: #fbfbd7;
-    text-decoration: none;
     transition: all 0.5s ;
 }
 
@@ -34,10 +34,10 @@ h1 {
 
 }
 h2{
-    color: rgb(2, 108, 4);
+    color: rgb(61, 2, 255);
 }
 h3{
-    background-color: #003b0e;
+    background-color: #3d02ab;
     color: #fbfbd7;
 
 border-radius: 8px;
@@ -51,7 +51,7 @@ em {
 }
 h4{
     color: #fbfbd7;
-    background-color: hsl(105, 43%, 33%); /* light highlight */
+    background-color: hsl(316, 98%, 48%); /* light highlight */
   border-radius: 8px;
   padding: 2px 6px;
   font-style: italic;
@@ -64,7 +64,7 @@ ul{ list-style-type: square;
 
 
 .intro{
-    color: #147e22;
+    color: #6200ff;
     font-weight: 900;
 }
 
@@ -72,5 +72,42 @@ ul{ list-style-type: square;
     font-family: 'Oleo Script', cursive;
     font-weight: 700;
     font-size: 90px;
-    color: #640000;
+    color: #ff01dd;
+}
+
+.blob {
+  position: fixed;
+  top: 30%; right: 10%;
+  width: 300px; height: 300px;
+  background: linear-gradient(135deg, #a98ef5, #c7b6ff);
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: blob 3s infinite alternate ease-in-out;
+  z-index: -1;
+}
+
+@keyframes blob {
+  0% { transform: translate(0,0) scale(1); }
+  33% { transform: translate(100px,-50px) scale(1.2); }
+  66% { transform: translate(-100px,50px) scale(0.8); }
+  100% { transform: translate(0,0) scale(1); }
+}
+
+
+.redblob {
+  position: fixed;
+  top: 30%; left: 10%;
+  width: 300px; height: 300px;
+  background: linear-gradient(135deg, #f98dc5, #ffa7ef);
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: blob 3s infinite alternate ease-in-out;
+  z-index: -1;
+}
+
+@keyframes blob {
+  0% { transform: translate(0,0) scale(1); }
+  33% { transform: translate(100px,-50px) scale(1.2); }
+  66% { transform: translate(-100px,50px) scale(0.8); }
+  100% { transform: translate(0,0) scale(1); }
 }
